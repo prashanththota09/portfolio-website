@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { ProfilePhoto } from '../components/ProfilePhoto'
 
 export function Hero() {
   return (
@@ -26,12 +27,13 @@ export function Hero() {
           </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto h-48 w-48 sm:h-64 sm:w-64 rounded-full bg-gradient-to-br from-[rgb(var(--color-primary))] to-[rgb(var(--color-accent))] shadow-lg ring-8 ring-[rgb(var(--color-primary))]/10"
-        />
+          className="mx-auto h-48 w-48 sm:h-64 sm:w-64 rounded-full overflow-hidden shadow-lg ring-8 ring-[rgb(var(--color-primary))]/10"
+        >
+          <ProfilePhoto className="h-full w-full object-cover object-[50%_30%]" alt="Prashanth Thota headshot" />
+        </motion.div>
       </div>
     </section>
   )

@@ -8,6 +8,7 @@ import { Skills } from './sections/Skills'
 import { Contact } from './sections/Contact'
 import { Footer } from './sections/Footer'
 import { Logo } from './components/Logo'
+import { ProfilePhoto } from './components/ProfilePhoto'
 import { ThemeToggle } from './components/ThemeToggle'
 import { MobileNav } from './components/MobileNav'
 
@@ -43,7 +44,9 @@ export function App() {
       <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-2">
-            <Logo className="h-8 w-8" />
+            <span className="h-8 w-8 rounded-full overflow-hidden ring-2 ring-[rgb(var(--color-primary))]/30">
+              <ProfilePhoto className="h-full w-full object-cover object-[50%_30%]" alt="Prashanth Thota" />
+            </span>
             <span className="font-semibold">Prashanth Thota</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
