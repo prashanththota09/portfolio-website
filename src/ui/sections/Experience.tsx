@@ -1,7 +1,7 @@
 export function Experience() {
   const roles = [
     {
-      title: 'Lead / Senior iOS Developer',
+      title: 'Lead/Senior Software Developer (iOS)',
       company: 'Vivance Pte. Ltd.',
       period: 'Jul 2020 – Present',
       bullets: [
@@ -12,7 +12,7 @@ export function Experience() {
       ],
     },
     {
-      title: 'Senior iOS Developer',
+      title: 'Software Developer (iOS)',
       company: 'Pace Wisdom Solutions Pvt Ltd.',
       period: 'Oct 2018 – Jul 2020',
       bullets: [
@@ -22,7 +22,7 @@ export function Experience() {
       ],
     },
     {
-      title: 'iOS Developer',
+      title: 'Software Developer (iOS)',
       company: 'Agathsya Technologies Pvt Ltd.',
       period: 'Mar 2018 – Sep 2018',
       bullets: [
@@ -31,7 +31,7 @@ export function Experience() {
       ],
     },
     {
-      title: 'iOS Software Engineer',
+      title: 'iOS Developer',
       company: 'Health5c Wellness Solutions Pvt Ltd.',
       period: 'Apr 2017 – Mar 2018',
       bullets: [
