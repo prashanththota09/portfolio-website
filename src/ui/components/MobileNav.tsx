@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Logo } from './Logo'
 
 type Item = { id: string; label: string }
 
