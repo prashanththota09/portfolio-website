@@ -11,7 +11,7 @@ export function ProfilePhoto({ className, alt = 'Profile photo' }: Props) {
   }
   return (
     <img
-      src="/profile.jpeg"
+      src="/portfolio-website/profile.jpeg"
       onError={() => setFailed(true)}
       alt={alt}
       loading="eager"
