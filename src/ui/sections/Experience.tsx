@@ -12,16 +12,6 @@ export function Experience() {
       ],
     },
     {
-      title: 'iOS Software Engineer',
-      company: 'Health5c Wellness Solutions Pvt Ltd.',
-      period: 'Apr 2017 – Mar 2018',
-      bullets: [
-        'Built core modules for health and fitness tracking apps leveraging Core Motion and HealthKit',
-        'Optimized app performance and reduced crash reports by 20%',
-        'Collaborated with product teams to enhance feature sets and improve user experience',
-      ],
-    },
-    {
       title: 'Senior iOS Developer',
       company: 'Pace Wisdom Solutions Pvt Ltd.',
       period: 'Oct 2018 – Jul 2020',
@@ -38,6 +28,16 @@ export function Experience() {
       bullets: [
         'Built secure healthcare & fintech apps using Swift and RESTful APIs',
         'Improved UI/UX collaboration, increasing retention by 25%'
+      ],
+    },
+    {
+      title: 'iOS Software Engineer',
+      company: 'Health5c Wellness Solutions Pvt Ltd.',
+      period: 'Apr 2017 – Mar 2018',
+      bullets: [
+        'Built core modules for health and fitness tracking apps leveraging Core Motion and HealthKit',
+        'Optimized app performance and reduced crash reports by 20%',
+        'Collaborated with product teams to enhance feature sets and improve user experience',
       ],
     },
   ]
