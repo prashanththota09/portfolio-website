@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prashanth-thota.github.io/portfolio",
+  "homepage": "https://prashanththota09.github.io/portfolio-website",
   "scripts": {
     "dev": "vite --open",
     "build": "tsc && vite build",
