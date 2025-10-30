@@ -8,34 +8,33 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'HealthSync Pro',
+    title: 'AWAK Clinical Trials',
     description:
-      'HIPAA-ready healthcare app with BLE medical device sync, HealthKit integration, and SwiftUI architecture. Reduced crash rate below industry average.',
+      'BLE‑enabled iOS app for dialysis device connectivity, collecting therapy logs and vitals with secure cloud sync; reduced manual trial reporting time by 40%.',
     tech: ['Swift', 'SwiftUI', 'Core Bluetooth', 'HealthKit', 'Combine', 'Fastlane'],
     image: '/screens/healthsync.png',
     links: [
-      { label: 'App Store', href: 'https://apps.apple.com' },
-      { label: 'Case Study', href: 'https://example.com/healthsync' },
+      { label: 'Overview', href: 'https://prashanththota09.github.io/portfolio-website' },
     ],
   },
   {
-    title: 'FitTrack+',
+    title: 'Viva Konnect',
     description:
-      'Fitness tracking app leveraging Core Motion and GPS geofencing with background sync and offline-first persistence.',
-    tech: ['Swift', 'UIKit', 'Core Motion', 'MapKit', 'Core Data'],
-    image: '/screens/fittrack.png',
-    links: [
-      { label: 'GitHub', href: 'https://github.com' },
-    ],
-  },
-  {
-    title: 'SecurePay Lite',
-    description:
-      'Fintech client with end-to-end encryption, biometric auth, and performance optimizations cutting load time by 35%.',
-    tech: ['Swift', 'UIKit', 'REST', 'Keychain', 'CI/CD'],
+      'Healthcare app for monitoring dialysis, logging patient vitals, scheduling teleconsultations, and integrating AI‑based chat to improve engagement by 25%.',
+    tech: ['Swift', 'UIKit', 'HealthKit', 'RESTful APIs', 'Notifications'],
     image: '/screens/securepay.png',
     links: [
-      { label: 'Case Study', href: 'https://example.com/securepay' },
+      { label: 'Overview', href: 'https://prashanththota09.github.io/portfolio-website' },
+    ],
+  },
+  {
+    title: 'Tindop',
+    description:
+      'Dating app with video profiles, real‑time chat, and AI‑driven match suggestions; improved retention via real‑time interactions and personalization.',
+    tech: ['Swift', 'UIKit', 'RESTful APIs', 'WebSockets'],
+    image: '/screens/fittrack.png',
+    links: [
+      { label: 'Overview', href: 'https://prashanththota09.github.io/portfolio-website' },
     ],
   },
 ]

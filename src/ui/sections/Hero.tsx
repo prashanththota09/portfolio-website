@@ -16,7 +16,7 @@ export function Hero() {
             Prashanth Thota
           </motion.h1>
           <p className="mt-3 text-lg text-slate-600 dark:text-slate-300">
-            Lead & Senior iOS Developer
+            Senior / Lead iOS Developer
           </p>
           <p className="mt-5 text-slate-700 dark:text-slate-300">
             Building world-class iOS apps with elegant architecture and great UX.

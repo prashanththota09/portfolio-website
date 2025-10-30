@@ -1,8 +1,10 @@
 export function Skills() {
   const groups: Record<string, string[]> = {
-    'Languages & Frameworks': ['Swift', 'SwiftUI', 'Objective‑C', 'UIKit', 'Combine'],
-    'Platform & Services': ['Core Data', 'Core Bluetooth', 'Core Motion', 'Core Location', 'HealthKit', 'MapKit'],
-    'Tooling': ['Git', 'Fastlane', 'Jenkins', 'Xcode', 'CI/CD', 'Unit Testing']
+    'Languages & Frameworks': ['Swift', 'SwiftUI', 'Objective‑C', 'UIKit', 'Combine', 'MVVM'],
+    'iOS APIs & Services': ['Core Data', 'Core Bluetooth', 'Core Motion', 'Core Location', 'HealthKit', 'MapKit', 'GCD'],
+    'Connectivity & Protocols': ['BLE', 'IoT', 'RESTful APIs'],
+    'Tooling & DevOps': ['Git', 'Xcode', 'Jenkins', 'Fastlane', 'CI/CD', 'Unit Testing', 'Code Review', 'Performance Optimization', 'TestFlight'],
+    'Collaboration': ['Agile/Scrum', 'Jira', 'GitHub']
   }
   return (
     <section id="skills" className="py-20">
