@@ -15,8 +15,8 @@ export function Contact() {
           <div>
             <p className="text-slate-700 dark:text-slate-300">Email: <a className="underline" href="mailto:prashanthsep2@gmail.com">prashanthsep2@gmail.com</a></p>
             <div className="mt-4 flex gap-4">
-              <a href="https://www.linkedin.com/in/prashanth-thota-40abb2100/" target="_blank" className="underline">LinkedIn</a>
-              <a href="https://github.com/prashanth-thota" target="_blank" className="underline">GitHub</a>
+              <a href="https://www.linkedin.com/in/prashanth-thota-40abb2100/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>
+              <a href="https://github.com/prashanththota09" target="_blank" rel="noopener noreferrer" className="underline">GitHub</a>
               <a href="https://x.com" target="_blank" className="underline">X</a>
               <a href="https://calendly.com" target="_blank" className="underline">Book a call</a>
             </div>
