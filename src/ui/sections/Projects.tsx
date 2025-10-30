@@ -16,6 +16,15 @@ export function Projects() {
               className="group rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900 hover:shadow-lg transition-shadow"
             >
               <div className="aspect-[16/10] bg-slate-100 dark:bg-slate-800 relative">
+                {p.image ? (
+                  <img
+                    src={new URL(p.image, import.meta.env.BASE_URL).toString()}
+                    alt={p.title}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : null}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-[rgb(var(--color-primary))] transition-opacity"/>
               </div>
               <div className="p-5">
