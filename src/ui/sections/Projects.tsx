@@ -1,24 +1,28 @@
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
+import { Reveal } from '../components/Reveal'
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-800/30 scroll-mt-24">
+    <section id="projects" className="py-14 bg-slate-50 dark:bg-slate-800/30 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-4">
+        <Reveal>
         <h2 className="text-2xl font-semibold">Projects</h2>
+        </Reveal>
         <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p) => (
+          {projects.map((p, idx) => (
             <motion.article
               key={p.title}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ delay: idx * 0.05, duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
               className="group rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden bg-white dark:bg-slate-900 hover:shadow-lg transition-shadow"
             >
               <div className="aspect-[16/10] bg-slate-100 dark:bg-slate-800 relative">
                 {p.image ? (
                   <img
-                    src={new URL(p.image, import.meta.env.BASE_URL).toString()}
+                    src={`${import.meta.env.BASE_URL}${p.image}`}
                     alt={p.title}
                     className="absolute inset-0 h-full w-full object-cover"
                     loading="lazy"

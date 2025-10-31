@@ -12,18 +12,31 @@ import { MobileNav } from './components/MobileNav'
 
 export function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    const stored = localStorage.getItem('theme') as 'light' | 'dark' | null
+    try {
+      const stored = (typeof localStorage !== 'undefined'
+        ? (localStorage.getItem('theme') as 'light' | 'dark' | null)
+        : null)
     if (stored) return stored
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light'
+      const prefersDark = typeof window !== 'undefined' && typeof window.matchMedia === 'function'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+        : false
+      return prefersDark ? 'dark' : 'light'
+    } catch {
+      return 'light'
+    }
   })
 
   useEffect(() => {
+    try {
     const root = document.documentElement
     root.classList.remove('light', 'dark')
     root.classList.add(theme)
+      if (typeof localStorage !== 'undefined') {
     localStorage.setItem('theme', theme)
+      }
+    } catch {
+      // no-op
+    }
   }, [theme])
 
   const navItems = useMemo(
